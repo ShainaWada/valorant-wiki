@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export type Role = {
   uuid: string;
@@ -11,7 +11,7 @@ export type Ability = {
   slot: string;
   displayName: string;
   description: string;
-  displayIcon: string;
+  displayIcon: null | string;
 };
 
 export type MediaList = {

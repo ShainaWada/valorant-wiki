@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/valorant");
+@import url('https://fonts.cdnfonts.com/css/valorant');
 
 @tailwind base;
 @tailwind components;
@@ -10,6 +10,27 @@ body {
 }
 
 @layer utilities {
+  .text-shadow {
+    -moz-text-shadow: 5px 4px 0px rgba(0, 0, 0, 1);
+    -webkit-text-shadow: 5px 4px 0px rgba(0, 0, 0, 1);
+    -ms-text-shadow: 5px 4px 0px rgba(0, 0, 0, 1);
+    text-shadow: 5px 4px 0px rgba(0, 0, 0, 1);
+  }
+
+  .text-shadow-title {
+    -moz-text-shadow: 5px 4px 0px rgb(255, 255, 255);
+    -webkit-text-shadow: 5px 4px 0px rgb(255, 255, 255);
+    -ms-text-shadow: 5px 4px 0px rgb(255, 255, 255);
+    text-shadow: 5px 4px 0px rgb(255, 255, 255);
+  }
+
+  .text-shadow-white {
+    -moz-text-shadow: -3px -2px 0px rgb(255, 255, 255);
+    -webkit-text-shadow: -3px -2px 0px rgb(255, 255, 255);
+    -ms-text-shadow: -3px -2px 0px rgb(255, 255, 255);
+    text-shadow: -3px -2px 0px rgb(255, 255, 255);
+  }
+
   .bg-gradient-container {
     background: linear-gradient(
       45deg,
@@ -115,7 +136,7 @@ body {
 
   .wrapper::before,
   .wrapper::after {
-    content: "";
+    content: '';
     opacity: 0;
     width: 100%;
     height: 80px;

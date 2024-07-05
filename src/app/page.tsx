@@ -1,19 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
-import main from "../../public/valorant-main.jpg";
-import logo from "../../public/valorant-logo.png";
-
+import Image from 'next/image';
+import Link from 'next/link';
+import main from '../../public/valorant-main.jpg';
+import logo from '../../public/valorant-logo.png';
 
 export default function Home() {
   return (
     <section className="bg-gradient-weapon-card animate__fadeIn animate__animated relative flex h-full w-[100%] items-center justify-center rounded-lg md:h-full md:w-[90%]">
-
-      <Image
-        src={main}
-        alt="valorant-logo"
-        className="object-cover relative rounded"
-        priority
-      />
+      <Image src={main} alt="valorant-logo" className="object-cover relative rounded" priority />
       <Image
         src={logo}
         alt="valorant-logo"
@@ -22,7 +15,6 @@ export default function Home() {
         width={500}
         height={400}
       />
-
 
       <Link
         href={'/agents'}

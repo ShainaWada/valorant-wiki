@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "media.valorant-api.com",
+        hostname: 'media.valorant-api.com',
       },
     ],
   },
