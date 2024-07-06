@@ -21,9 +21,7 @@ const Agents = () => {
         <div className="grid place-content-center grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 grid-rows-5 gap-y-8 gap-x-2 overflow-auto pt-9">
           {agents?.map((agent) => {
             return (
-              <div key={agent.uuid}>
-                <Card key={agent.uuid} agent={agent} />
-              </div>
+              <Card key={agent.uuid} agent={agent} />
             );
           })}
         </div>

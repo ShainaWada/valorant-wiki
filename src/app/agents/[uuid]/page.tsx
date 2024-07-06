@@ -37,7 +37,7 @@ const Agent = ({ params }: { params: { uuid: string } }) => {
           />
         ) : null}
         <Link href={'../../agents'}>
-          <AiOutlineSwapLeft className="aspect-square z-50 fill-white border border-white size-8 absolute top-12 left-12 animate-spin animate-once" />
+          <AiOutlineSwapLeft className="aspect-square z-50 fill-white border border-white size-8 absolute top-8 left-8 sm:top-12 sm:left-12 animate-spin animate-once" />
         </Link>
         {data?.fullPortrait ? (
           <Image
