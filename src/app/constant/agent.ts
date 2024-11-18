@@ -23,4 +23,5 @@ export const EnglishName: { [key: string]: string } = {
   レイズ: 'RAZE',
   チェンバー: 'CHAMBER',
   アストラ: 'ASTRA',
+  ヴァイス: 'VYSE'
 };
