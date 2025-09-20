@@ -26,6 +26,7 @@ export type VoiceLine = {
 export type Agent = {
   uuid: string;
   displayName: string;
+  englishName?: string;
   description: string;
   displayIcon: string;
   fullPortrait: string;

@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import ViewContainer from './components/ViewContainer';
 import ViewContent from './components/ViewContent';

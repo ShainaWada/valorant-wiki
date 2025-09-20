@@ -1,3 +1,4 @@
+import React from 'react';
 import { ViewContentProps } from '@/types';
 
 const ViewContent = ({ children }: ViewContentProps) => {

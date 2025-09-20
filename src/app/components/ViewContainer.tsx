@@ -1,3 +1,4 @@
+import React from 'react';
 import { ViewContainerProps } from '@/types';
 
 const ViewContainer = ({ children }: ViewContainerProps) => {

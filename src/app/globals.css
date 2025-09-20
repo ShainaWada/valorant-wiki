@@ -81,6 +81,13 @@ body {
     --card-height: 300px;
     --card-width: calc(var(--card-height) / 1.5);
   }
+
+  @media (max-width: 480px) {
+    :root {
+      --card-height: 250px;
+      --card-width: calc(var(--card-height) / 1.5);
+    }
+  }
   * {
     box-sizing: border-box;
   }
@@ -102,7 +109,13 @@ body {
     padding: 0 36px;
     perspective: 2500px;
     margin: 0 20px;
-    background: linear-gradient();
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      margin: 0 8px;
+      padding: 0 24px;
+    }
   }
 
   .cover-image {

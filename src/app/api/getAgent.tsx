@@ -4,10 +4,22 @@ import axios from 'axios';
 
 export const getAgent = async (id: string): Promise<Agent> => {
   try {
-    const response = await axios.get<{ data: Agent }>(
-      `https://valorant-api.com/v1/agents/${id}?isPlayableCharacter=true&language=ja-JP`
-    );
-    return response.data.data;
+    const [jpResponse, enResponse] = await Promise.all([
+      axios.get<{ data: Agent }>(
+        `https://valorant-api.com/v1/agents/${id}?isPlayableCharacter=true&language=ja-JP`
+      ),
+      axios.get<{ data: Agent }>(
+        `https://valorant-api.com/v1/agents/${id}?isPlayableCharacter=true&language=en-US`
+      )
+    ]);
+
+    const jpAgent = jpResponse.data.data;
+    const enAgent = enResponse.data.data;
+
+    return {
+      ...jpAgent,
+      englishName: enAgent.displayName.toUpperCase()
+    };
   } catch (error) {
     console.error('Error fetching agents:', error);
     throw new Error('Failed to fetch agents data');

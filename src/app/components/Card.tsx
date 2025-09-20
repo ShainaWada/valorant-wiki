@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Card = ({ agent }: { agent: Agent }) => {
+
   return (
     <Link href={`agents/${agent.uuid}`} className="card">
       <div className="wrapper">
